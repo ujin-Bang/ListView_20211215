@@ -22,5 +22,12 @@ class StudentAdapter(
 
             tempRow =mInflater.inflate(R.layout.student_list_item, null)
         }
+
+//        tempRow가 비어있다면 => 채워줌
+//        tmepRow가 비었을 가능성은? 없다
+//        안전하게 사용 가능한 row를 만들자
+        val row = tempRow!!
+
+        return row
     }
 }
