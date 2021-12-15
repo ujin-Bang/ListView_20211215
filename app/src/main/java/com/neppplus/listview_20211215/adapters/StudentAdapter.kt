@@ -18,6 +18,7 @@ class StudentAdapter(
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
 
         var tempRow = convertView
+
         if(tempRow == null) {
 
             tempRow =mInflater.inflate(R.layout.student_list_item, null)
